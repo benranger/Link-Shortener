@@ -1,0 +1,44 @@
+﻿@model Link_Shortener.Models.Link
+<!--Link_Shortener.Models.Link-->
+
+@{
+    ViewBag.Title = "Create";
+}
+
+
+<!--Create-->
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.linkTo, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.linkTo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.linkTo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+@{ 
+    if (Model !=null)
+    {
+        <h2><a href="https://localhost:44397/link/view?id=@Model.linkFrom">From: https://localhost:44397/link/view?id=@Model.linkFrom</a></h2>
+        <br />
+        <h2><a href="@Model.linkTo">To: @Model.linkTo</a></h2>
+    }
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

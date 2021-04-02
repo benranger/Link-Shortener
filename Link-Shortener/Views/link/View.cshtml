@@ -1,0 +1,14 @@
+﻿@model Link_Shortener.Models.Link
+
+@{
+    ViewBag.Title = "View";
+}
+<html>
+<body onload="window.location.replace('@Model.linkTo')">
+    <h2>View</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "create")
+    </p>
+</body>
+</html>

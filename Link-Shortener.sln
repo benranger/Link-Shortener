@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Link-Shortener", "Link-Shortener\Link-Shortener.csproj", "{D488CB5E-1ACB-4CD7-A5F1-79B2A2ABD2BB}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LinkDb", "LinkDb\LinkDb.sqlproj", "{3E723B5C-C23C-41CB-A55E-2D5E4AAF513E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D488CB5E-1ACB-4CD7-A5F1-79B2A2ABD2BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D488CB5E-1ACB-4CD7-A5F1-79B2A2ABD2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D488CB5E-1ACB-4CD7-A5F1-79B2A2ABD2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D488CB5E-1ACB-4CD7-A5F1-79B2A2ABD2BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E723B5C-C23C-41CB-A55E-2D5E4AAF513E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E723B5C-C23C-41CB-A55E-2D5E4AAF513E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E723B5C-C23C-41CB-A55E-2D5E4AAF513E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3E723B5C-C23C-41CB-A55E-2D5E4AAF513E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E723B5C-C23C-41CB-A55E-2D5E4AAF513E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E723B5C-C23C-41CB-A55E-2D5E4AAF513E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {621F3EB8-76D3-4877-AC56-A507CD106C54}
+	EndGlobalSection
+EndGlobal
