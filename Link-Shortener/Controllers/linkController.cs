@@ -11,9 +11,17 @@ namespace Link_Shortener.Controllers
 {
     public class linkController : Controller
     {
-        public ActionResult Index()
+        public ActionResult view(int id)
         {
-            return View();
+            List<Link> linkList;
+            Link link;
+            using (IDbConnection cnn = new SqlConnection(connString()))
+            {
+                string sql = "SELECT linkFrom,linkTo FROM dbo.Links WHERE linkFrom="+id;
+                linkList = cnn.Query<Link>(sql).ToList();
+            }
+            link = linkList[0];
+            return View(link);
         }
 
         public ActionResult create()
