@@ -49,6 +49,7 @@ namespace Link_Shortener.Controllers
                     if (!idList.Contains(x))
                     {
                         linkFromInt = x;
+                        break;
                     }
                 }
                 link.linkFrom = linkFromInt;

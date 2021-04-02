@@ -10,7 +10,7 @@ namespace Link_Shortener.Models
     public class Link
     {
         public int linkFrom { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Please enter a URL")]
         [DataType(DataType.Url, ErrorMessage ="Must be a Valid URL")]
         public string linkTo { get; set; }
     }
